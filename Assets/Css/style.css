@@ -1,0 +1,95 @@
+/* Global */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.wrapper{
+    margin: 0 auto;
+    width: 100%;
+    max-width: 1200px;
+}
+body{
+    font-family: 'Fira Sans', sans-serif;
+    background-color: rgb(182, 177, 177);
+}
+.section-title{
+    text-align: center;
+    font-size: 30px;
+    color: black;
+    padding:10px;
+}
+/* Navigation */
+.nav{
+    position: sticky;
+    top:0;
+    background-color: #fff;
+    z-index: 100;
+}
+.nav-list{
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.nav-list-item{
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+    transition: .4s;
+}
+.nav-list-item:hover{
+    color: lightblue;
+    transform: scale(1.2);
+    cursor: pointer;
+}
+/* Hero section */
+.hero{
+    background-image: url(../Img/coding.jpg);
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+}
+.hero-bg{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(12, 182, 221, 0.244);
+}
+.hero-text{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    color: #fff;
+}
+.hero-text-header{
+    font-size: 50px;
+}
+.hero-text-header-element{
+    color: lightblue
+}
+.hero-text-header-paragraph{
+    font-size: 30px;
+}
+.hero-text-btn{
+    margin: 10px;
+    padding: 5px 20px;
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 20px;
+    border-radius: 8px;
+    border: none;
+    background-color:rgb(182, 177, 177);
+    transition:  color .4s;
+}
+.hero-text-btn:hover{
+    background-color:lightblue;
+}
+/* About us */
+.about-us-box{
+    display: flex;
+}
+img{
+    height: 300px;
+    width: 400px;
+}
