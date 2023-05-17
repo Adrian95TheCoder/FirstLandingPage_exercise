@@ -4,6 +4,9 @@
     margin: 0;
     padding: 0;
 }
+html{
+    scroll-behavior: smooth;
+}
 .wrapper{
     margin: 0 auto;
     width: 100%;
@@ -18,6 +21,9 @@ body{
     font-size: 30px;
     color: black;
     padding:10px;
+}
+section{
+    scroll-margin-top: 60px;
 }
 /* Navigation */
 .nav{
@@ -88,8 +94,18 @@ body{
 /* About us */
 .about-us-box{
     display: flex;
+    padding: 20px;
 }
 img{
     height: 300px;
     width: 400px;
+}
+.about-us-box-text-title{
+    text-align: center;
+    padding-bottom: 10px;
+}
+/* Products */
+.products{
+    background-color: #fff;
+    height: 100vh;
 }
