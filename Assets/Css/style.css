@@ -15,6 +15,7 @@ html{
 body{
     font-family: 'Fira Sans', sans-serif;
     background-color: rgb(182, 177, 177);
+    overflow-x: hidden;
 }
 .section-title{
     text-align: center;
@@ -24,6 +25,30 @@ body{
 }
 section{
     scroll-margin-top: 60px;
+}
+.section-padding{
+    padding: 10px 20px;
+}
+.white-block{
+    position: absolute;
+    height: 40px;
+    width: 60%;
+    background-color: #fff;
+}
+.white-block-left{
+    bottom: -1px;
+    left:-50px;
+    transform: skew(45deg);
+}
+.white-block-right{
+    top: 0px;
+    right:-50px;
+    transform: skew(45deg);
+}
+hr{
+    width: 60%;
+    margin: 0 auto;
+    text-align: center;
 }
 /* Navigation */
 .nav{
@@ -51,6 +76,7 @@ section{
 }
 /* Hero section */
 .hero{
+    position: relative;
     background-image: url(../Img/coding.jpg);
     height: 100vh;
     background-position: center;
@@ -92,6 +118,10 @@ section{
     background-color:lightblue;
 }
 /* About us */
+.about-us{
+    position: relative;
+    height: 100vh;
+}
 .about-us-box{
     display: flex;
     padding: 20px;
@@ -106,6 +136,148 @@ img{
 }
 /* Products */
 .products{
-    background-color: #fff;
     height: 100vh;
+    position: relative;
+    padding-top: 60px;
+    background-color: #fff;
+}
+.products-conatiner{
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+}
+.products-container-box-title{
+    text-align: center;
+    padding: 5px 0;
+}
+/* .products-container-box{} */
+    
+/* Reviews */
+.reviews{
+    height: 100vh;
+    position: relative;
+    padding-top: 60px
+}
+.section-title-text{
+    text-align: center;
+    font-size: 20px;
+}
+.reviews-boxes{
+    padding-top: 50px;
+}
+.reviews-boxes-box{
+    position: relative;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 3px 3px 10px rgba(46,46,46,0.18);
+    
+}
+.reviews-boxes-box-img{
+    position: absolute;
+    left:75%;
+    transform: translate(-50%, -50%);
+}
+.reviews-boxes-box-img img{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+.reviews-boxes-box-info-quote{
+    margin-bottom: 10px;
+    font-size: 30px;
+    color:lightblue ;
+}
+.reviews-boxes-box-info-text{
+    margin-bottom: 10px;
+}
+/* Contact */
+.contact{
+    background-color: #fff;
+}
+.contact-form, .contact-form-top{
+    display: flex;
+    flex-direction: column;
+}
+.contact-form-top-label, .contact-form-label{
+    margin-bottom:10px;
+    text-transform: uppercase;
+}
+.contact-form-top-label-input{
+    margin-bottom: 5px;
+    padding: 10px 20px;
+    border: 1px solid;
+    border-radius: 8px;
+    font-size: 20px;
+}
+.contact-form-textarea{
+    margin-bottom: 20px;
+    padding: 10px 20px;
+    border: 1px solid;
+    border-radius: 8px;
+    font-size: 20px;
+    max-width: 100%;
+    min-width: 100%;
+    width: 100%;
+    min-height: 150px;
+}
+.contact-form-btn{
+    align-self: flex-end;
+    padding: 10px 20px;
+    width: 100%;
+    max-width: 300px;
+    background-color: rgb(182, 177, 177);
+    color: lightblue;
+    font-size: 20px;
+    font-weight: bold;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition:  .4s;
+}
+.contact-form-btn:hover{
+    background-color: lightblue;
+    color: black;
+}
+.contact-localization{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.contact-localization-heading{
+    padding: 50px 0;
+    color:lightblue
+}
+iframe{
+    width: 70%;
+    border-radius: 8px;
+}
+/* Footer */
+.footer{
+    position: relative;
+    padding-top: 60px;
+}
+.footer-boxes{
+    display: flex;
+    justify-content: space-around;
+}
+.footer-boxes-box-title, .fa-laptop-code{
+    font-size: 30px;
+    padding-bottom: 5px;
+}
+.footer-boxes-box-social{
+    padding-top: 10px;
+    font-size: 30px;
+}
+.footer-box-link{
+    color: lightblue;
+}
+.footer-box-link:hover{
+    color: black;
+}
+.footer-boxes-box-contact-title{
+    padding: 5px 0;
+}
+.fa-phone, .fa-at{
+    padding-right: 5px;
 }
